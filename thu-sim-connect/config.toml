@@ -1,0 +1,31 @@
+# email config
+[mail]
+receivers = ["your_username@mails.tsinghua.edu.cn"]
+from_name = "GPU"
+subject = "IP信息汇报"
+host = "mails.tsinghua.edu.cn"
+port = 465
+
+# url config
+[url]
+net_url = "http://net.tsinghua.edu.cn/"
+ip_url = "http://ifconfig.me/ip"
+
+# os config
+[os]
+name = "windows"
+encode = "gb2312"
+ip_cmd = "ipconfig"
+tmp_file = "./tmp.txt"
+wd_bin = "bin/chromedriver.exe"
+
+[user]
+name = "your_username"
+password = "your_password"
+
+[connect]
+max_retry = 3
+retry_sleep = 30
+
+[program]
+delay = 120
