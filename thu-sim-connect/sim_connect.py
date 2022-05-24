@@ -91,6 +91,9 @@ def login_timer(username, passwd, timer, notify=True):
 
         run_times += 1
         logger.info('run times {}, connected {}, sended {}, timer {}...', run_times, connected, sended, timer)
+        if timer <= 1000:
+            logger.info('timer <= 1000, run once, exit...')
+            break
         time.sleep(timer)
     # return
 
